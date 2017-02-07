@@ -15,7 +15,7 @@
 
 自定义动画的效果很简单，如下。
 
-
+![image](https://github.com/BohrForIOS/CommonViewControllerTransition/blob/master/CustomPresent/ViewControllerTransition.gif ) 
 
 一、自定义的方式present出一个控制器；
 
@@ -24,25 +24,12 @@
 ####实现的步骤如下：
 1.第一个控制器：遵守控制器转场代理协议UIViewControllerTransitioningDelegate
 
-![第一个控制器遵守控制器转场代理协议UIViewControllerTransitioningDelegate.png](http://upload-images.jianshu.io/upload_images/817197-ab3b9a5e3c50f593.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 2.第一个控制器：实现控制器转场代理协议的present方法，和dismiss方法
 
-![实现代理的present方法和dismiss方法](http://upload-images.jianshu.io/upload_images/817197-5c3bb18de5ef97e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 3.点击present按钮时，让第二个控制器的转场代理transitioningDelegate为第一个控制器，并设置modal出的方式modalPresentationStyle为用户自定义，调用系统presentViewController方法[self presentViewController:secVC animated:YES completion:nil];
-
-![设置第二个控制器的转场代理和modal方式，并调用转场方法.png](http://upload-images.jianshu.io/upload_images/817197-fb296b94f292f245.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 看起来十分简单，就三个步骤，实现控制器转场代理协议的方法即可。
 
 需要说明的是，协议方法present和dismiss返回的是一个遵守控制器转场动画协议UIViewControllerAnimatedTransitioning的对象，这个对象控制着不同的转场动画的效果，而转场动画协议UIViewControllerAnimatedTransitioning负责转场动画的实现，这个协议有两个方法，一个是动画的时间，一个是动画的实现，需要用户自己定义
 
-![转场动画协议的实现.png](http://upload-images.jianshu.io/upload_images/817197-4b23d62f04342583.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-PresentAnimator对象的动画实现如下：
-
-![Present动画实现的代码.png](http://upload-images.jianshu.io/upload_images/817197-ccb61d70cefb1fc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-DismissAnimator对象的动画实现如下：
-
-![Dismiss动画实现的代码.png](http://upload-images.jianshu.io/upload_images/817197-c417e2e039d558eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+详情见简书地址：http://www.jianshu.com/p/d88030216001
