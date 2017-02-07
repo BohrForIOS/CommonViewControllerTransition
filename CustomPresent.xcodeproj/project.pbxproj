@@ -20,6 +20,7 @@
 		848821FD1E495ECC00EFF914 /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 848821FC1E495ECC00EFF914 /* DismissAnimator.m */; };
 		848822031E49622300EFF914 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 848822021E49622300EFF914 /* UIView+SetRect.m */; };
 		848822061E49626C00EFF914 /* UIImageView+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 848822051E49626C00EFF914 /* UIImageView+Init.m */; };
+		8488220B1E49AE9F00EFF914 /* ViewControllerTransition.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8488220A1E49AE9F00EFF914 /* ViewControllerTransition.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		848822041E49626C00EFF914 /* UIImageView+Init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Init.h"; sourceTree = "<group>"; };
 		848822051E49626C00EFF914 /* UIImageView+Init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Init.m"; sourceTree = "<group>"; };
 		848822071E49627A00EFF914 /* GlobalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalValue.h; sourceTree = "<group>"; };
+		8488220A1E49AE9F00EFF914 /* ViewControllerTransition.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ViewControllerTransition.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		848821D81E495A7900EFF914 /* CustomPresent */ = {
 			isa = PBXGroup;
 			children = (
+				8488220A1E49AE9F00EFF914 /* ViewControllerTransition.gif */,
 				848822071E49627A00EFF914 /* GlobalValue.h */,
 				848822041E49626C00EFF914 /* UIImageView+Init.h */,
 				848822051E49626C00EFF914 /* UIImageView+Init.m */,
@@ -208,6 +211,7 @@
 				848821E91E495A7900EFF914 /* LaunchScreen.storyboard in Resources */,
 				848821E61E495A7900EFF914 /* Assets.xcassets in Resources */,
 				848821E41E495A7900EFF914 /* Main.storyboard in Resources */,
+				8488220B1E49AE9F00EFF914 /* ViewControllerTransition.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +387,7 @@
 				848821EF1E495A7900EFF914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
