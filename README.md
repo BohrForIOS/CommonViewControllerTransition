@@ -21,7 +21,7 @@
 
 二、自定义的方式dismiss刚才present的控制器；
 
-####实现的步骤如下：
+#### 实现的步骤如下：
 1.第一个控制器：遵守控制器转场代理协议UIViewControllerTransitioningDelegate
 
 2.第一个控制器：实现控制器转场代理协议的present方法，和dismiss方法
