@@ -1,12 +1,12 @@
 # CommonViewControllerTransition
 在Object-C中，控制器的转场有两类，一类是导航控制器的push和pop，一类是普通控制器的present和dismiss，我们经常使用系统的API（如下所示）来实现控制器的转场动画
 
-#####1.导航控制器里使用到的转场动画代码
+##### 1.导航控制器里使用到的转场动画代码
 >[self.navigationController pushViewController:vc animated:YES]
 
 >[self.navigationController popViewControllerAnimated:YES]
 
-#####2.普通控制器里使用到的转场动画代码
+##### 2.普通控制器里使用到的转场动画代码
 >[self presentViewController:secVC animated:YES completion:nil];
 
 > [self dismissViewControllerAnimated:YES completion:nil];
